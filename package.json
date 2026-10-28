@@ -1,0 +1,20 @@
+{
+  "name": "wymlink-mail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sends Wymlink's emails (codes, alerts) for the backend, which can't reach SMTP from Render.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "nodemailer": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@vercel/node": "^5.0.0",
+    "typescript": "^5.7.0"
+  }
+}
